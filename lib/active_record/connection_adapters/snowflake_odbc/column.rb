@@ -12,7 +12,7 @@ module ActiveRecord
         private
 
         def _default(default)
-          return nil if default.empty?
+          return nil if default.nil? || default.empty?
 
           default
         end
